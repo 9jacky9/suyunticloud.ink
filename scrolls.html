@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>星穹观象 - 速云梯技术文献与星轨网络深度探微</title>
+  <meta name="description" content="速云梯星穹观象专栏，收录全天候专线稳定性实测、无盘内存级零日志架构透析、学术科研网络访问及旁路由网关调优长文。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Masthead -->
+  <header class="celestial-masthead">
+    <div class="masthead-inner">
+      <a href="index.html" class="brand-link" aria-label="速云梯首页">
+        <svg class="celestial-logo-svg" viewBox="0 0 230 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="速云梯星穹Logo">
+          <defs>
+            <linearGradient id="astralGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#fbbf24"/>
+              <stop offset="50%" stop-color="#f59e0b"/>
+              <stop offset="100%" stop-color="#d97706"/>
+            </linearGradient>
+            <radialGradient id="novaCore" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#ffffff"/>
+              <stop offset="40%" stop-color="#fbbf24"/>
+              <stop offset="100%" stop-color="#090714" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <circle cx="24" cy="24" r="16" stroke="url(#astralGoldGrad)" stroke-width="1.8" stroke-dasharray="4 2"/>
+          <ellipse cx="24" cy="24" rx="16" ry="6" stroke="#818cf8" stroke-width="1.4" transform="rotate(-30 24 24)"/>
+          <circle cx="24" cy="24" r="5" fill="url(#novaCore)"/>
+          <path d="M24 16L25.5 21L30.5 22.5L25.5 24L24 29L22.5 24L17.5 22.5L22.5 21Z" fill="#fbbf24"/>
+          <text x="54" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Songti SC', 'Source Han Serif CN', serif" font-weight="900" font-size="22" fill="url(#astralGoldGrad)" letter-spacing="2">速云梯</text>
+          <text x="55" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-weight="700" font-size="8" fill="#cbd5e1" letter-spacing="3.2">ASTROLABE CLOUD</text>
+        </svg>
+      </a>
+      <div class="header-action">
+        <a href="https://ww012.twilightaff.com/#/?code=A56DH1Af" class="btn-celestial-primary" rel="nofollow" target="_blank">立即开通</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="切换导航菜单" type="button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+      <nav class="celestial-nav-menu" id="navMenu">
+        <a href="index.html">首页</a>
+        <a href="index.html#advantages">星轨底座</a>
+        <a href="index.html#streaming">遥测矩阵</a>
+        <a href="index.html#pricing">星轨资费</a>
+        <a href="index.html#reviews">学者口碑</a>
+        <a href="index.html#faq">天象答疑</a>
+        <a href="scrolls.html" class="active">星穹观象</a>
+      </nav>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobileDrawer">
+      <a href="index.html" class="drawer-link">首页</a>
+      <a href="index.html#advantages" class="drawer-link">星轨底座</a>
+      <a href="index.html#streaming" class="drawer-link">遥测矩阵</a>
+      <a href="index.html#pricing" class="drawer-link">星轨资费</a>
+      <a href="index.html#reviews" class="drawer-link">学者口碑</a>
+      <a href="index.html#faq" class="drawer-link">天象答疑</a>
+      <a href="scrolls.html" class="drawer-link drawer-hub-link active">星穹观象 &rarr;</a>
+      <div class="drawer-cta-wrap">
+        <a href="https://ww012.twilightaff.com/#/?code=A56DH1Af" class="btn-celestial-primary" rel="nofollow" target="_blank">立即开通专属加速</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="scrolls-hero">
+      <div class="container">
+        <h1>星穹观象 · 技术研思录</h1>
+        <p>格物致知，探究星轨互联之本；慎思明辨，沉淀网络工程之理</p>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="scrolls-list-grid">
+        <!-- Article 1: Brand Study -->
+        <article class="scroll-entry-card">
+          <span class="entry-seal-tag">长测札记</span>
+          <h2><a href="suyunti-stability-test.html">经纬求索：速云梯全天候稳定性长周期实测与零日志隐私架构透视</a></h2>
+          <p class="entry-summary">针对速云梯专线网络展开长达 90 天的不间断探针抓取，深度呈现其跨洋中继丢包方差、抗封锁演进及纯内存硬件防护细节。</p>
+          <a href="suyunti-stability-test.html" class="entry-read-link">展卷研读 &rarr;</a>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="scroll-entry-card">
+          <span class="entry-seal-tag">无痕审计</span>
+          <h2><a href="zero-logs-architecture-study.html">何谓真正的无痕浏览？剖析纯内存RAM-Only节点与零日志审计的行业门槛</a></h2>
+          <p class="entry-summary">绝大多数商用节点真的不存日志吗？从操作系统内核、虚拟内存回写到物理服务器拔电瞬消，全面解读真正零日志的技术门槛。</p>
+          <a href="zero-logs-architecture-study.html" class="entry-read-link">展卷研读 &rarr;</a>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="scroll-entry-card">
+          <span class="entry-seal-tag">科研治学</span>
+          <h2><a href="academic-research-web-access.html">高校文献检索如何避免DNS污染与连接重置？科研工作者的网络配置心法</a></h2>
+          <p class="entry-summary">面对 IEEE Xplore、Nature 与 ScienceDirect 的频发连接超时，解析加密 DoH 域名中继与高校学者的分流调优之道。</p>
+          <a href="academic-research-web-access.html" class="entry-read-link">展卷研读 &rarr;</a>
+        </article>
+
+        <!-- Article 4 -->
+        <article class="scroll-entry-card">
+          <span class="entry-seal-tag">影音溯源</span>
+          <h2><a href="ott-streaming-geo-unlock.html">流媒体跨区定位原理：为何仅换代理IP无法彻底绕过区域版权拦截？</a></h2>
+          <p class="entry-summary">深入解析 MaxMind 商业地理数据库同步周期、WebRTC 浏览器指纹泄漏与双栈 IPv6 绕过机制，实现原生画质解锁。</p>
+          <a href="ott-streaming-geo-unlock.html" class="entry-read-link">展卷研读 &rarr;</a>
+        </article>
+
+        <!-- Article 5 -->
+        <article class="scroll-entry-card">
+          <span class="entry-seal-tag">网关架构</span>
+          <h2><a href="openwrt-smart-gateway-setup.html">全屋智能设备无感出国：OpenWrt旁路由透明代理架构从规划到落地</a></h2>
+          <p class="entry-summary">无需每台设备安装客户端，通过软路由 DHCP 网关重定向与 nftables 规则链，构建全屋 Apple TV 与游戏主机无感加速。</p>
+          <a href="openwrt-smart-gateway-setup.html" class="entry-read-link">展卷研读 &rarr;</a>
+        </article>
+
+        <!-- Article 6 -->
+        <article class="scroll-entry-card">
+          <span class="entry-seal-tag">抖动解析</span>
+          <h2><a href="packet-loss-jitter-troubleshooting.html">宽带测速显示千兆为何跨国浏览依然卡？深入理解时延方差与丢包率</a></h2>
+          <p class="entry-summary">厘清带宽大小与传输延迟的物理区别，剖析网络抖动（Jitter）对 TCP 窗口滑动造成的雪崩效应及针对性平抑方案。</p>
+          <a href="packet-loss-jitter-troubleshooting.html" class="entry-read-link">展卷研读 &rarr;</a>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="celestial-footer">
+    <div class="container">
+      <div class="footer-bottom-bar" style="border:none; padding-top:0;">
+        <div>&copy; 2026 速云梯 (Suyunti Cloud). 保留所有权利。</div>
+        <div class="footer-legal-links">
+          <a href="index.html">返回首页</a>
+          <span>•</span>
+          <a href="sitemap.html">网站地图</a>
+          <span>•</span>
+          <a href="about.html">关于我们</a>
+          <span>•</span>
+          <a href="privacy.html">隐私政策</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  (function(){
+    var btn = document.getElementById('mobileMenuBtn');
+    var drawer = document.getElementById('mobileDrawer');
+    if(btn && drawer){
+      btn.addEventListener('click', function(){
+        btn.classList.toggle('active');
+        drawer.classList.toggle('open');
+      });
+      drawer.querySelectorAll('a').forEach(function(a){
+        a.addEventListener('click', function(){
+          btn.classList.remove('active');
+          drawer.classList.remove('open');
+        });
+      });
+    }
+  })();
+  </script>
+</body>
+</html>
